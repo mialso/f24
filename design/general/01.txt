@@ -1,0 +1,26 @@
+План версий
+этот документ будет отражать поэтапное(по-версионное) добавление функционала программе, а так же будет содержать полный перечень приложений и компонентов, т.е. приложение - компонент - функционал - версия.
+
+поиск
+
+пример use case'а
+browser
+search product by region by catalogue
+> user enter the site
+< server responds with 'enter' app
+* enter view *
+	... app get data from browser's storage
+	... app forms enter document
+> app sends enter document to server's enter app
+	... server creates 'office' app according to user priviliges
+< server resonds with an 'office' app
+* office view *
+	[search product]
+	[search company]
+	[guide]
+	[faq]
+	[promo]
+	... user enters 'search product' app
+	* search product view *
+		{search document}
+		{results document}
