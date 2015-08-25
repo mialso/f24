@@ -1,7 +1,11 @@
 План версий
 этот документ будет отражать поэтапное(по-версионное) добавление функционала программе, а так же будет содержать полный перечень приложений и компонентов, т.е. приложение - компонент - функционал - версия.
 
-поиск
+поиск товаров | браузер-клиент |            | 1.0.0
+поиск компаний | браузер-клиент |           | 1.0.0
+хранение личной инфо | | | 1.0.0
+заказ товара | браузер-клиент | | 1.0.0
+ | | |
 
 пример use case'а
 browser
@@ -20,7 +24,23 @@ search product by region by catalogue
 	[guide]
 	[faq]
 	[promo]
-	... user enters 'search product' app
+	[last activities]
+	[news]
+	[notifications]
+	... user enters 'search product' app(room)
 	* search product view *
 		{search document}
-		{results document}
+		{result document}
+		... if any result-doc present, view show it
+			else search-doc show
+		... user has no result-doc, new search doc shown
+		* search document view *
+			-> region info <-
+			-> catalouge info <-
+			... user choose 'region info' enter
+				* choose region *
+					{regions document}
+					... user choose the region
+						=== region.move(regions storage, regions document)
+					... {search document} is populated with region data
+						=== region.move(regions document, search document)
