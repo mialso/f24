@@ -1,0 +1,39 @@
+user  | device | client-app |            |             |
+      | device | client-app |            | storage-app |
+      | device | client-app |            |             |
+      | device | client-app | server-app |             |
+user  | device | client-app |            | storage-app |
+      | device | client-app |            |             |
+      | device | client-app |            |             |
+user  | device | client-app |            |             |
+
+client-app algorithm // depends on user object... initialization
+	start
+		start main module
+		init modules
+			check versions
+			check config ? or just browse module's directory
+				? recompile
+		load & start event loop
+		init user
+			load user data
+				server request & response
+		convert data to info
+		show user info
+		wait for input
+	get user input
+
+	get server input
+
+server-app algorithm
+	start server-app
+		init user
+		init modules
+			create the world
+		load & start event loop
+	start client-app   ??? embeded client, ex http???
+		{client-app alogorithm} 	
+	get server-app config data from user
+	recomile server-app according to configuration
+	restart server-app
+	demonize server-app

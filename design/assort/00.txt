@@ -1,0 +1,32 @@
+assortiment programm design
+
+real description
+employee searches for product categories. By different meanings, such as standarts, technologies, use cases, product composition.
+each categorie fullfiled with a product, which is produced by some producer, and is selled by some shop. Aslo there may be companies, which have alot of factories or shops.
+each product fullfiled with information, such as compostiton, properties, name, brand and so on and so forth.
+the program makes different representations, filters by categories, products, producers, brands etc.
+
+place: office
+active objects: empoyee (user)
+context:
+	equipment: computer linux www-access pen pencil paper document
+	client: basic client needs description, maybe some product use cases
+
+null process: to determine abstract category
+->|
+context:
+	client needs, use case
+	competitors web-sites
+	producers web-sites
+
+at office employee on "?event" try to find out top-level abstract product category with a www-access on a computer(browser) according to client needs or use-case
+|->
+document
+	companies (competitors)
+	companies (producers)
+	categories
+
+first process: to find out branch standards
+->| client needs, maybe use case...
+at office employee on "?event" try to find out branch standarts with a www-access on a computer 
+|-> document

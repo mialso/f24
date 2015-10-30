@@ -1,0 +1,66 @@
+general concept
+	business is a world
+the world consists of:
+	real objects  // passive objects
+		buildings
+		equipment
+		land
+		animals  // active objects???
+		products
+		documents
+	people  // active objects
+		employees
+		clients
+		owners
+		governor people (tax, police, etc...)
+		supply companies employees
+		other companies
+	law structure
+		companies
+		bank accounts
+		tax rates & schemes
+	documents  // docs describe everything to provide clear information, that could be shared in a safe way
+		real object docs (instructions, property docs, price & supply docs, etc)
+		people docs (work instructions, personal docs, etc)
+		business processes
+		reports
+		technologies
+		programs
+	energy(money)
+	events
+		time
+
+the program is a set of docs(instructions) to perform information exchange between people by using different equipment
+basicaly, the business process describe situation, wich leads to information exchange. This description should have an equipment, user and info.
+exchange means that one user(employee) enters info, and any else, who has a permission, gets info. Additionaly, program performs operations to present info in a way, that end user need.
+
+business -> make product = offer = production
+busines -> sale | buy <- client // here we need a common process, where business involves clients, let's call it sales
+client -> want product = demand = consumption
+// so it's all about product??? about money? about people? about processes? about documents? about structure? about movement? about places? about effectiveness? about users?
+
+process = place + active object + event + context + action(reaction) |-> result
+at place on event active object within a context makes an action and {process} produce result
+
+place
+	real place
+		land
+			building
+				floor
+					room
+	virtual place  // may be it is environment (computer), and the place is any real place at the moment
+		site
+		programm
+
+event
+	time
+	custom event
+
+context
+	passive objects
+	active objects
+	data (info)
+
+action
+	
+result = context change
